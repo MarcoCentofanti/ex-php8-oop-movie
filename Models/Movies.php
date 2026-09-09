@@ -18,8 +18,8 @@ class Movies {
         $this->genres = $genres;
     }
 
-    public function getPlot(){
-        return $this->plot;
+    public function getGenres(){
+        return $this->genres;
     }
 
 }
