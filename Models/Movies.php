@@ -6,9 +6,9 @@ class Movies {
     public $year;
     public $duration;
     public $plot;
-    public $genres;
+    public array $genres;
 
-    public function __construct($title, $director, $year, $duration, $plot, Genres $genres)
+    public function __construct($title, $director, $year, $duration, $plot, $genres)
     {
         $this->title = $title;
         $this->director = $director;
@@ -18,8 +18,8 @@ class Movies {
         $this->genres = $genres;
     }
 
-    public function getGenres(){
+     public function getGenres(): array {
         return $this->genres;
-    }
+     }
 
 }

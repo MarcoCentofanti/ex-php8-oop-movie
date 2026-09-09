@@ -2,12 +2,11 @@
 
 class Genres {
     public $genre;
-    public $subGenre;
 
-    public function __construct($genre, $subGenre)
+
+    public function __construct($genre)
     {
         $this->genre = $genre;
-        $this->subGenre = $subGenre;
     }
 
 }
