@@ -1,6 +1,8 @@
 <?php
 
 class Movies {
+
+    use HasRating;
     public $title;
     public $director;
     public $year;
@@ -8,7 +10,7 @@ class Movies {
     public $plot;
     public array $genres;
 
-    public function __construct($title, $director, $year, $duration, $plot, $genres)
+    public function __construct($title, $director, $year, $duration, $plot, $genres, $rating)
     {
         $this->title = $title;
         $this->director = $director;
@@ -16,6 +18,7 @@ class Movies {
         $this->duration = $duration;
         $this->plot = $plot;
         $this->genres = $genres;
+        $this->rating = $rating;
     }
 
      public function getGenres(): array {
